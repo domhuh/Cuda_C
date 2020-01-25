@@ -18,9 +18,10 @@ int main(void)
 
 	cudaMemcpy (&c, dev_c, sizeof(int), cudaMemcpyDeviceToHost);
 
-	std::cout << c << endl;
-
 	cudaFree(dev_c);
+
+	std::cout << c;
+
 
 	return 0;
 }
